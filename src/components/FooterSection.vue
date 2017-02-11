@@ -1,6 +1,6 @@
 <template>
   <footer>
-      <p>©︎Tsubakizaki Resort. All Right Reserved.</p>
+      <p class="wow fadeIn">©︎Tsubakizaki Resort. All Right Reserved.</p>
   </footer>
 </template>
 
@@ -19,7 +19,7 @@ footer {
   align-items: center;
   height: 480px;
   text-align: center;
-  background: url("../assets/images/top/bg_Footer.jpg") 50% 50% no-repeat;
+  background: #fff url("../assets/images/top/bg_Footer.jpg") 50% 50% no-repeat;
   p {
     margin: 0;
     font-size: 1.2rem;

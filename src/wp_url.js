@@ -1,1 +1,1 @@
-export default 'http://bubo.jp/wordpress/';
+export default 'http://tsubakizakiresort.com/';

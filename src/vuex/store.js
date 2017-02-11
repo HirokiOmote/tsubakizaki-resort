@@ -26,8 +26,7 @@ const actions = getPosts();
 // };
 
 const getters = {
-  // eslint-disable-next-line
-  // posts: state => state.posts,
+  // posts: getPost = state => state.posts,
 };
 
 export default new Vuex.Store({

@@ -1,56 +1,117 @@
 <template>
-  <article class="SectionSecond">
-    <h2 class="Header"><img src="../assets/images/top/ttl_SecondMain.svg" alt="セカンドライフ"/></h2>
-    <article class="containerFirst">
-      <h3><img src="../assets/images/top/ttl_Second001.svg" alt=""/></h3>
-      <p>椿崎リゾートには年代も出身もさまざまな住人がいます。この地を気に入った理由を尋ねると、「リゾートとして開発した土地のため、昔からあるコミュニティに入る煩わしさがない」、「山も海も近いので、ガーデニング、畑での野菜づくり、釣りなど趣味三昧ができる」といった答えが返ってきました。リタイア後の田舎暮らし、のびのびと子育て、休日のリフレッシュ。暮らし方はそれぞれですが、皆さん自然豊かな椿崎リゾートで理想のスローライフを実践しています。</p>
-    </article>
-    <article class="container">
-      <div class="image"><img src="../assets/images/top/img_Second001.jpg" alt=""/></div>
-      <div class="txtCol">
-        <header>
-          <h2><img src="../assets/images/top/ttl_Second002.svg" alt=""/></h2>
-          <p>移住歴10年　山崎義則・珠枝さん</p>
-        </header>
-        <p>定年後、22年間暮らした神奈川県から移住した山崎さん。海の近くで暮らしたい、大好きな釣りを思い切り楽しみたいという夢をかなえる場所を探してたどり着いたのが椿崎でした。「箱根や伊豆、下田、軽井沢など、思いつく別荘地はすべて見に行きましたが、ここは見学に行ったどの別荘地よりもきちんと管理されていて、管理事務所には人が常駐している。安心も元気で暮らせる大切な要素だと思います」。理想のセカンドライフ実現法は、気持ちが充実できる場所を見つけることでした。</p>
+  <article id="Second" class="SectionSecond">
+    <h2 class="Header wow fadeIn"><img src="../assets/images/top/ttl_SecondMain.svg" alt="セカンドライフ"/></h2>
+    <div class="bgWaves">
+      <div class="content">
+        <article class="containerFirst">
+          <h3 class="wow fadeInDown"><img src="../assets/images/top/ttl_Second001.svg" alt="仕事、恋愛、子育て、全力で頑張ってきた。次はセカンドライフらしい。全力で楽しもう。"/></h3>
+          <p class="wow fadeInUp">椿崎リゾートには年代も出身もさまざまな住人がいます。この地を気に入った理由を尋ねると、「リゾートとして開発した土地のため、昔からあるコミュニティに入る煩わしさがない」、「山も海も近いので、ガーデニング、畑での野菜づくり、釣りなど趣味三昧ができる」といった答えが返ってきました。リタイア後の田舎暮らし、のびのびと子育て、休日のリフレッシュ。暮らし方はそれぞれですが、皆さん自然豊かな椿崎リゾートで理想のスローライフを実践しています。</p>
+        </article>
+        <article class="container">
+          <div class="image wow fadeInLeft"><img src="../assets/images/top/img_Second001.jpg" alt=""/></div>
+          <div class="txtCol wow fadeIn">
+            <header>
+              <h2><img src="../assets/images/top/ttl_Second002.svg" alt=""/></h2>
+              <p>移住歴10年　山崎義則・珠枝さん</p>
+            </header>
+            <p>定年後、22年間暮らした神奈川県から移住した山崎さん。海の近くで暮らしたい、大好きな釣りを思い切り楽しみたいという夢をかなえる場所を探してたどり着いたのが椿崎でした。「箱根や伊豆、下田、軽井沢など、思いつく別荘地はすべて見に行きましたが、ここは見学に行ったどの別荘地よりもきちんと管理されていて、管理事務所には人が常駐している。安心も元気で暮らせる大切な要素だと思います」。理想のセカンドライフ実現法は、気持ちが充実できる場所を見つけることでした。</p>
+          </div>
+        </article>
+        <a class="Btn wow fadeIn" href="/contact/">別荘についてのお問い合わせはこちら</a>
+        <ul class="Slide wow fadeIn">
+          <li><img src="../assets/images/top/img_SecondSlide001.jpg" alt=""/></li>
+          <li><img src="../assets/images/top/img_SecondSlide002.jpg" alt=""/></li>
+          <li><img src="../assets/images/top/img_SecondSlide003.jpg" alt=""/></li>
+          <li><img src="../assets/images/top/img_SecondSlide004.jpg" alt=""/></li>
+          <li><img src="../assets/images/top/img_SecondSlide005.jpg" alt=""/></li>
+          <li><img src="../assets/images/top/img_SecondSlide006.jpg" alt=""/></li>
+        </ul>
       </div>
-    </article>
-    <a class="Btn" href="">別荘についてのお問い合わせはこちら</a>
-    <ul class="Slide">
-      <li><img src="../assets/images/top/img_SecondSlide001.jpg" alt=""/></li>
-      <li><img src="../assets/images/top/img_SecondSlide002.jpg" alt=""/></li>
-      <li><img src="../assets/images/top/img_SecondSlide003.jpg" alt=""/></li>
-      <li><img src="../assets/images/top/img_SecondSlide004.jpg" alt=""/></li>
-      <li><img src="../assets/images/top/img_SecondSlide005.jpg" alt=""/></li>
-      <li><img src="../assets/images/top/img_SecondSlide006.jpg" alt=""/></li>
-    </ul>
+    </div>
   </article>
 </template>
 
 <script>
+import $ from 'jquery';
+
 export default {
   name: 'SecondSection',
+
+  mounted() {
+    this.fixedScroll();
+  },
+
+  methods: {
+    fixedScroll() {
+      $(() => {
+        const nav = $('.SectionSecond .Header, .SectionSecond .bgWaves');
+        const offset = nav.offset();
+        $(window).scroll(() => {
+          if ($(window).scrollTop() > offset.top) {
+            nav.addClass('fixed');
+          } else {
+            nav.removeClass('fixed');
+          }
+        });
+      });
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 @import "../assets/stylesheets/_mixin";
 
+article {
+  width: 100%;
+}
+
+.SectionSecond {
+  position: relative;
+  padding: 40px 0;
+  @include media( md ) {
+    padding: 0 0 80px;
+  }
+}
+
 .Header {
   display: flex;
   justify-content: center;
   align-items: center;
+  top: 0;
+  width: 100%;
   height: 710px;
-  background: url("../assets/images/top/bg_Second002.png") left 0% bottom 0% repeat-x,
-  url("../assets/images/top/bg_Second.jpg") left 50% bottom 50% no-repeat;
-
+  margin: 0;
+  background: url("../assets/images/top/bg_Second.jpg") left 50% bottom 50% no-repeat;
+  @include media( lg ) {
+    background-size: cover;
+    &.fixed {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
 }
 
-.SectionSecond {
-  padding: 40px 0;
-  @include media( md ) {
-    padding-bottom: 80px;
+.bgWaves {
+  position: relative;
+  padding-top: 50px;
+  background: url("../assets/images/top/bg_Second002.png") left 0% top 0% repeat-x;
+  @include media( lg ) {
+    &.fixed {
+      top: 710px;
+      font-size: 1.4rem;
+      min-height: 120em;
+    }
   }
+}
+
+.content {
+  position: relative;
+  padding: 0;
+  z-index: 15;
+  background-color: #fff;
 }
 
 .containerFirst {
@@ -60,12 +121,15 @@ export default {
   align-items: center;
   padding: 0 15px;
   p {
+    max-width: 100%;
     margin-top: 2em;
     font-size: 1.5rem;
-    line-height: 2.2;
+    line-height: 1.8;
   }
   @include media( md ) {
-
+    p {
+      line-height: 2.2;
+    }
   }
 }
 
@@ -157,11 +221,16 @@ export default {
   @include media( sm ) {
     flex-wrap: nowrap;
     margin-top: 40px;
+    width: 100%;
   }
   li {
-    width: calc( 100% / 3);
+    width: calc( 100% / 3 );
+    line-height: 0;
     @include media( sm ) {
-      width: auto;
+      width: calc( 100% / 6 );
+      img {
+        width: 100%;
+      }
     }
   }
 }
