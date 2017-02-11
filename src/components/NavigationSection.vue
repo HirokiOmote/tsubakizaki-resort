@@ -40,7 +40,7 @@ nav {
       display: flex;
       justify-content: space-between;
       list-style-type: none;
-      margin-bottom: 2em;
+      margin: 0 0 2em;
       padding: 0;
     }
     li {
