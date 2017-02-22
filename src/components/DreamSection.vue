@@ -11,7 +11,7 @@
           <p>椿崎リゾートでは、夢を持つ人をサポートするプロジェクトを立ち上げました。土地の無償提供(※)や仕入れ先のご相談、広告のサポートなど、アナタと一緒に夢を実現させるお手伝いを致します。１日１組限定のレストランや民宿、海で見つけた貝殻や、豊かな山の素材で作品を作る工房や雑貨屋さん。椿崎は田舎だけれど、田舎だから叶えられる夢があります。ぜひ一度お問い合わせください。<br />※各種条件がございます。詳細はお問い合わせください。</p>
         </div>
       </div>
-      <a class="Btn wow fadeIn" href="/contact/">出店についてのお問い合わせはこちら</a>
+      <a class="Btn wow fadeIn" href="/contact/?checked=周辺施設">出店についてのお問い合わせはこちら</a>
     </article>
     <div class="imgMap"><img src="../assets/images/top/img_Map.png" alt=""/></div>
     <div class="containerMap">
@@ -89,7 +89,7 @@
         </table>
       </article>
     </div>
-    <a href="/contact/" class="Btn wow fadeIn">そのほか全てのお問い合わせはこちら</a>
+    <a href="/contact/?checked=管理体制" class="Btn wow fadeIn">そのほか全てのお問い合わせはこちら</a>
   </article>
 </template>
 
@@ -109,6 +109,7 @@ export default {
   z-index: 10;
   background-color: #fff;
   @include media( md ) {
+    margin-bottom: -5px;
     padding-bottom: 90px;
   }
 }

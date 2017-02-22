@@ -36,11 +36,12 @@ nav {
     @include container( 1000px );
     display: block;
     width: 100%;
+    padding: 30px 0 10px;
     ul {
       display: flex;
       justify-content: space-between;
       list-style-type: none;
-      margin: 0 0 2em;
+      margin: 0;
       padding: 0;
     }
     li {

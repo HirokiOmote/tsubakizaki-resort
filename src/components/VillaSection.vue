@@ -34,7 +34,7 @@
         <p>敷地内には温泉も湧き出しており、区画によっては自宅で毎日湯を楽しむことも可能。海を見下ろす岸壁につくられた岩組みの露天風呂と屋根付きの足湯は休日や週末に住人だけが使える施設。コミュニケーションの場としても利用されており、町内会の会合や趣味の会などが足湯で行われることもあります。 </p>
       </div>
     </article>
-    <a class="Btn" href="/contact/">別荘についてのお問い合わせはこちら</a>
+    <a class="Btn" href="/contact/?checked=分譲地">別荘についてのお問い合わせはこちら</a>
   </div>
 </template>
 
@@ -53,7 +53,7 @@ export default {
 .SectionVilla {
   padding: 40px 0;
   @include media( md ) {
-    margin-bottom: 40px;
+    padding-bottom: 40px;
   }
 }
 

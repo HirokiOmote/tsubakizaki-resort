@@ -17,7 +17,7 @@ import Post from './Post';
 import WPURL from '../wp_url';
 
 const rootURL = WPURL;
-const postsURL = `${WPURL}wp-json/wp/v2/posts?_embed`;
+const postsURL = `${WPURL}wp-json/wp/v2/posts?_embed&per_page=6`;
 
 Vue.use(VueAxios, axios);
 
