@@ -1,1 +1,1 @@
-export default 'http://tsubakizakiresort.com/';
+export default 'http://tsubakizaki.jp/';
