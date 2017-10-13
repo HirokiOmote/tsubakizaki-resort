@@ -1,8 +1,8 @@
 <template>
-  <header class="headerTop wow fadeIn">
+  <header class="headerTop" data-aos="fade">
     <div class="container">
-      <h1 class="wow fadeInUp"><img src="../assets/images/top/ttl_header.svg" alt="椿崎リゾート"/></h1>
-      <p class="wow fadeInDown"><img src="../assets/images/top/txt_header.svg" alt=""/></p>
+      <h1 data-aos="fade-up" data-aos-delay="1000"><img src="../assets/images/top/ttl_header.svg" alt="椿崎リゾート"/></h1>
+      <p data-aos="fade-down" data-aos-delay="1500"><img src="../assets/images/top/txt_header.svg" alt=""/></p>
     </div>
   </header>
 </template>
@@ -21,14 +21,15 @@ export default {
   text-align: center;
   background: url("../assets/images/top/bg_header.jpg") 50% 50% no-repeat;
   background-size: auto 200%;
+
   @include media( md ) {
     min-height: 800px;
     padding-bottom: 0;
     background-size: cover;
     background-attachment: fixed;
   }
+
   h1 {
-    animation-delay: 1s;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,7 +47,6 @@ export default {
 
   p {
     @include media( md ) {
-      animation-delay: 1.5s;
       position: absolute;
       left: 55px;
       top: 80px;

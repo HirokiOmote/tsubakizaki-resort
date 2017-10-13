@@ -1,15 +1,15 @@
 <template>
   <article id="Second" class="SectionSecond">
-    <h2 class="Header wow fadeIn"><img src="../assets/images/top/ttl_SecondMain.svg" alt="セカンドライフ"/></h2>
+    <h2 class="Header" data-aos="fade"><img src="../assets/images/top/ttl_SecondMain.svg" alt="セカンドライフ"/></h2>
     <div class="bgWaves">
       <div class="content">
         <article class="containerFirst">
-          <h3 class="wow fadeInUP"><img src="../assets/images/top/ttl_Second001.svg" alt="仕事、恋愛、子育て、全力で頑張ってきた。次はセカンドライフらしい。全力で楽しもう。"/></h3>
-          <p class="wow fadeInUP">椿崎リゾートには年代も出身もさまざまな住人がいます。この地を気に入った理由を尋ねると、「リゾートとして開発した土地のため、昔からあるコミュニティに入る煩わしさがない」、「山も海も近いので、ガーデニング、畑での野菜づくり、釣りなど趣味三昧ができる」といった答えが返ってきました。リタイア後の田舎暮らし、のびのびと子育て、休日のリフレッシュ。暮らし方はそれぞれですが、皆さん自然豊かな椿崎リゾートで理想のスローライフを実践しています。</p>
+          <h3 data-aos="fade"><img src="../assets/images/top/ttl_Second001.svg" alt="仕事、恋愛、子育て、全力で頑張ってきた。次はセカンドライフらしい。全力で楽しもう。"/></h3>
+          <p data-aos="fade">椿崎リゾートには年代も出身もさまざまな住人がいます。この地を気に入った理由を尋ねると、「リゾートとして開発した土地のため、昔からあるコミュニティに入る煩わしさがない」、「山も海も近いので、ガーデニング、畑での野菜づくり、釣りなど趣味三昧ができる」といった答えが返ってきました。リタイア後の田舎暮らし、のびのびと子育て、休日のリフレッシュ。暮らし方はそれぞれですが、皆さん自然豊かな椿崎リゾートで理想のスローライフを実践しています。</p>
         </article>
         <article class="container">
-          <div class="image wow fadeInLeft"><img src="../assets/images/top/img_Second001.jpg" alt=""/></div>
-          <div class="txtCol wow fadeIn">
+          <div class="image" data-aos="fade-right"><img src="../assets/images/top/img_Second001.jpg" alt=""/></div>
+          <div class="txtCol" data-aos="fade">
             <header>
               <h2><img src="../assets/images/top/ttl_Second002.svg" alt=""/></h2>
               <p>移住歴10年　山崎義則・珠枝さん</p>
@@ -17,8 +17,8 @@
             <p>定年後、22年間暮らした神奈川県から移住した山崎さん。海の近くで暮らしたい、大好きな釣りを思い切り楽しみたいという夢をかなえる場所を探してたどり着いたのが椿崎でした。「箱根や伊豆、下田、軽井沢など、思いつく別荘地はすべて見に行きましたが、ここは見学に行ったどの別荘地よりもきちんと管理されていて、管理事務所には人が常駐している。安心も元気で暮らせる大切な要素だと思います」。理想のセカンドライフ実現法は、気持ちが充実できる場所を見つけることでした。</p>
           </div>
         </article>
-        <a class="Btn wow fadeIn" href="/contact/?checked=中古物件">移住(セカンドライフ)についてのお問い合わせはこちら</a>
-        <ul class="Slide wow fadeIn">
+        <a class="Btn" href="/contact/?checked=中古物件" data-aos="fade">移住(セカンドライフ)についてのお問い合わせはこちら</a>
+        <ul class="Slide" data-aos="fade">
           <li><img src="../assets/images/top/img_SecondSlide001.jpg" alt=""/></li>
           <li><img src="../assets/images/top/img_SecondSlide002.jpg" alt=""/></li>
           <li><img src="../assets/images/top/img_SecondSlide003.jpg" alt=""/></li>
@@ -44,7 +44,7 @@ export default {
   methods: {
     fixedScroll() {
       if (window.matchMedia('(min-width: 1140px)').matches) {
-        $(() => {
+        $(window).on('load', () => {
           const body = $('.SectionSecond');
           const section = $('.SectionSecond .Header');
           const sectionHeight = section.outerHeight();

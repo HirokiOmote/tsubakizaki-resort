@@ -1,15 +1,15 @@
 <template>
   <div id="Villa" class="SectionVilla">
     <article class="containerFirst">
-      <div class="image wow fadeInRight"><img src="../assets/images/top/img_Villa001.jpg" alt=""/></div>
-      <div class="txtColFirst wow fadeIn">
+      <div class="image" data-aos="fade-left"><img src="../assets/images/top/img_Villa001.jpg" alt=""/></div>
+      <div class="txtColFirst" data-aos="fade">
         <h2><img src="../assets/images/top/ttl_villa001.svg" alt=""/></h2>
         <p>耳を澄ますと、聞こえてくるのは波の音と鳥の囀り。時間がゆっくりと流れる感覚。なぜか感じる、懐かしい匂い・音・気配。都会では忘れていた心の充足感を体感できる、そんな場所。椿崎の別荘でのんびり過ごす贅沢は、きっと貴方を癒すでしょう。</p>
       </div>
     </article>
     <article class="container">
-      <div class="image wow fadeInLeft"><img src="../assets/images/top/img_Villa002.jpg" alt=""/></div>
-      <div class="txtCol wow fadeIn">
+      <div class="image" data-aos="fade-right"><img src="../assets/images/top/img_Villa002.jpg" alt=""/></div>
+      <div class="txtCol" data-aos="fade">
         <header>
           <h2><img src="../assets/images/top/ttl_villa002.svg" alt=""/></h2>
           <p>別荘歴10年　川端美代江さん</p>
@@ -18,8 +18,8 @@
       </div>
     </article>
     <article class="container">
-      <div class="image wow fadeInLeft"><img src="../assets/images/top/img_Villa003.jpg" alt=""/></div>
-      <div class="txtCol wow fadeIn">
+      <div class="image" data-aos="fade-right"><img src="../assets/images/top/img_Villa003.jpg" alt=""/></div>
+      <div class="txtCol" data-aos="fade">
         <header>
           <h2><img src="../assets/images/top/ttl_villa003.svg" alt=""/></h2>
           <p>別荘歴20年　座間建一さん</p>
@@ -28,8 +28,8 @@
       </div>
     </article>
     <article class="container">
-      <div class="image wow fadeInLeft"><img src="../assets/images/top/img_Villa004.jpg" alt=""/></div>
-      <div class="txtCol wow fadeIn">
+      <div class="image" data-aos="fade-right"><img src="../assets/images/top/img_Villa004.jpg" alt=""/></div>
+      <div class="txtCol" data-aos="fade">
         <h2><img src="../assets/images/top/ttl_villa004.svg" alt=""/></h2>
         <p>敷地内には温泉も湧き出しており、区画によっては自宅で毎日湯を楽しむことも可能。海を見下ろす岸壁につくられた岩組みの露天風呂と屋根付きの足湯は休日や週末に住人だけが使える施設。コミュニケーションの場としても利用されており、町内会の会合や趣味の会などが足湯で行われることもあります。 </p>
       </div>
@@ -42,11 +42,9 @@
 export default {
   name: 'VillaSection',
 };
-
-
 </script>
 
-<style src="animate-scss/animate.css" scoped></style>
+
 <style lang="scss" scoped>
 @import "../assets/stylesheets/mixin";
 

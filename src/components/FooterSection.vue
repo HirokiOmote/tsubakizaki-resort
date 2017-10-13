@@ -1,6 +1,6 @@
 <template>
   <footer>
-      <p class="wow fadeIn">©︎Tsubakizaki Resort. All Right Reserved.</p>
+      <p data-aos="fade">©︎Tsubakizaki Resort. All Right Reserved.</p>
   </footer>
 </template>
 

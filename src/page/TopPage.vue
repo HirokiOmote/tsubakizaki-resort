@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import WOW from 'wow.js';
+import AOS from 'aos';
 import HeaderSection from '../components/HeaderSection';
 import NavigationSection from '../components/NavigationSection';
 import SecondSection from '../components/SecondSection';
@@ -33,9 +33,19 @@ export default {
   },
 
   mounted() {
-    new WOW().init();
+    this.AOSinit();
+  },
+
+  methods: {
+    AOSinit() {
+      new AOS.init({
+        once: true,
+        delay: 300,
+        duration: 700,
+      });
+    },
   },
 };
 </script>
 
-<style src="animate.css"></style>
+<style src="aos/dist/aos.css"></style>

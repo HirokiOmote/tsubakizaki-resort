@@ -1,26 +1,26 @@
 <template>
   <article id="Dream" class="Section">
-    <h2 class="Header"><img class="wow fadeIn" src="../assets/images/top/ttl_DreamMain.svg" alt="セカンドライフ"/></h2>
+    <h2 class="Header"><img src="../assets/images/top/ttl_DreamMain.svg" alt="セカンドライフ" data-aos="fade" /></h2>
     <article class="First">
       <div class="container">
-        <div class="Image wow fadeInRight">
+        <div class="Image" data-aos="fade-left">
           <img src="../assets/images/top/img_Dream.jpg" alt=""/>
         </div>
-        <div class="Txt wow fadeInLeft">
+        <div class="Txt" data-aos="fade-right">
           <h3><img src="../assets/images/top/ttl_Dream001.svg" alt=""/></h3>
           <p>椿崎リゾートでは、夢を持つ人をサポートするプロジェクトを立ち上げました。土地の無償提供(※)や仕入れ先のご相談、広告のサポートなど、アナタと一緒に夢を実現させるお手伝いを致します。１日１組限定のレストランや民宿、海で見つけた貝殻や、豊かな山の素材で作品を作る工房や雑貨屋さん。椿崎は田舎だけれど、田舎だから叶えられる夢があります。ぜひ一度お問い合わせください。<br />※各種条件がございます。詳細はお問い合わせください。</p>
         </div>
       </div>
-      <a class="Btn wow fadeIn" href="/contact/?checked=周辺施設">出店についてのお問い合わせはこちら</a>
+      <a class="Btn" href="/contact/?checked=周辺施設" data-aos="fade">出店についてのお問い合わせはこちら</a>
     </article>
     <div class="imgMap"><img src="../assets/images/top/img_Map.png" alt=""/></div>
     <div class="containerMap">
-      <article id="Place" class="wow fadeIn">
+      <article id="Place" data-aos="fade">
         <h3><img src="../assets/images/top/ttl_Dream002.svg" alt="椿崎ここにあり"/></h3>
         <p>穴水町の中心部から車で約15分。椿崎リゾートは緑深い山と波静かな海に囲まれた場所にあります。穴水町は金沢市と能登半島を結ぶ能登里山街道の終点。平成25年に、通行料が全線無料となりますます便利に！能登の玄関口ともいえるのが穴水町です。能登空港からも車で１０分ほどという便利な立地。そして平成27年3月、ついに北陸新幹線が開業し、これまで4時間前後かかっていた金沢⇔東京間が2時間30分に大幅に短縮され、首都圏へのアクセスがより一層快適になりました。</p>
         <p class="route"><img src="../assets/images/top/img_MapRoute.png" alt=""/></p>
       </article>
-      <article id="Management" class="wow fadeIn">
+      <article id="Management" data-aos="fade">
         <h3><img src="../assets/images/top/ttl_Dream003.svg" alt="管理してます"/></h3>
         <p>椿崎リゾートは、昭和46年に名相開発株式会社が開発したリゾート地です。当時から一貫して名相開発株式会社が管理しております。全国の「リゾート地」と呼ばれる場所は多数ありますが、実は管理事務所に常に人が常駐しているところは多くありません。何かあった時に管理者がいない不安。そんな思いはさせたくないと、名相開発株式会社では常にスタッフがいます。いざという時頼れる誰かがいる、という安心感は大きな違いです。</p>
         <table>
@@ -54,7 +54,7 @@
             </tr>
             <tr>
               <th>FAX</th>
-              <td>0768-56-1602</td>
+              <td>0768-56-1605</td>
             </tr>
             <tr>
               <th>事業内容</th>
@@ -62,7 +62,7 @@
             </tr>
             <tr>
               <th>宅建番号</th>
-              <td>石川県（1）3839号</td>
+              <td>石川県(3)3839号</td>
             </tr>
           </tbody>
         </table>
@@ -89,7 +89,7 @@
         </table>
       </article>
     </div>
-    <a href="/contact/?checked=管理体制" class="Btn wow fadeIn">そのほか全てのお問い合わせはこちら</a>
+    <a href="/contact/?checked=管理体制" class="Btn" data-aos="fade">そのほか全てのお問い合わせはこちら</a>
   </article>
 </template>
 

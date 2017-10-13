@@ -1,9 +1,9 @@
 <template>
   <article id="Blog">
-    <header class="wow fadeIn">
+    <header data-aos="fade">
         <h2><img src="../assets/images/top/ttl_Blog.svg" alt="椿崎だより"/></h2>
     </header>
-    <div class="container wow fadeIn">
+    <div class="container" data-aos="fade">
       <post v-for="post in posts" :post="post"></post>
     </div>
   </article>

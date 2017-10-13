@@ -1,5 +1,5 @@
 <template>
-  <nav class="wow fadeIn">
+  <nav data-aos="fade">
     <ul>
       <li><a href="/contact/"><img src="../assets/images/top/txt_nav001.svg" alt="お問い合わせ"/></a></li>
       <li><a href="#Blog" data-scroll><img src="../assets/images/top/txt_nav002.svg" alt="椿崎だより"/></a></li>
@@ -16,13 +16,19 @@
 </template>
 
 <script>
-import smoothScroll from 'smooth-scroll';
+import SmoothScroll from 'smooth-scroll';
 
 export default {
   name: 'NavigationSection',
 
   mounted() {
-    smoothScroll.init();
+    this.scrollInit();
+  },
+
+  methods: {
+    scrollInit() {
+      new SmoothScroll('[data-scroll]');
+    },
   },
 };
 </script>
